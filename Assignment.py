@@ -36,16 +36,16 @@ driver.implicitly_wait(3)
 driver(resourceId='com.geely.pma.climate:id/fragrance_title').exists()
 
 
-os.system('adb shell screencap -p /sdcard/screenshot.png')
-
 #Screenshot
 
 
-#current_time = time.strftime("%Y-%m-%d-%H_%M_%S", time.localtime(time.time()))
-#pfilename = 'C:\\XXXxxx\\pic'
-#pic_path = pfilename + '\\' + 'screenshot_' + current_time + '.png'
-#driver.screenshot(pic_path)
+current_time = time.strftime("%Y-%m-%d-%H_%M_%S", time.localtime(time.time()))
+pfilename = 'C:\\XXXxxx\\pic'
+pic_path = pfilename + '\\' + 'screenshot_' + current_time + '.png'
+driver.screenshot(pic_path)
 
+
+#os.system('adb shell screencap -p /sdcard/screenshot.png')
 
 
 driver.app_stop_all()
